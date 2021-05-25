@@ -5,4 +5,5 @@ resource "aws_instance" "ohio-ec2" {
     key_name = aws_key_pair.bastion_key.key_name
 
   
+  
 }
