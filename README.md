@@ -1,9 +1,12 @@
 # ihos-module-ec2
 dynamic ec2
 
-    ami = var.ami
-    instance_type = var.instance_type
-    security_groups = [ aws_security_group.ec2-sec.name ]
-    key_name = aws_key_pair.bastion_key.key_name
 
-    provider = {region = var.region}
+    key_name = "your key name"
+    ami = "ami type"
+    region = "which region"
+    tag_name = "give tag name"
+    instance_type = "your instance type"
+    public_key = file("~/.ssh/id_rsa.pub")
+    sec_name = "your security group name"
+    
